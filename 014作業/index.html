@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            list-style: none;
+            transition: 1s;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 0 15px;
+        }
+
+
+
+        .col {
+            width: 100%;
+            /* border: 2px solid #000; */
+            /* border-bottom: 2px solid #000; */
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+
+        }
+
+
+        .col img {
+            width: 100%;
+        }
+
+        #wda,
+        #htnk,
+        #css,
+        #js,
+        #jq,
+        #bs,
+        #sass,
+        #vue {
+            position: relative;
+            left: 0;
+            top: 0;
+        }
+
+        @media (min-width:992px) {
+            .container {
+                /* background-color: #000; */
+                width: 100%;
+                height: 100%;
+                position: relative;
+            }
+
+            .col {
+                width: 150px;
+                border-bottom: none;
+                text-align: center;
+            }
+
+            #wda {
+                position: absolute;
+                width: 250px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            #wda::before {
+                content: '';
+                position: absolute;
+                width: 280px;
+                height: 3px;
+                background-color: #000;
+                transform: rotate(40deg);
+                left: -260px;
+                top: -20px;
+            }
+
+            #html {
+                position: absolute;
+                top: 7%;
+                left: 8%;
+            }
+
+            #html::before {
+                content: '';
+                position: absolute;
+                width: 520px;
+                height: 3px;
+                background-color: #000;
+                transform: rotate(20deg);
+                left: 150px;
+                top: 250px;
+            }
+
+            #css {
+                position: absolute;
+                top: 1%;
+                left: 25%;
+            }
+
+            #css::before {
+                content: '';
+                position: absolute;
+                width: 400px;
+                height: 3px;
+                background-color: #000;
+                transform: rotate(-10deg);
+                left: -50px;
+                top: 500px;
+            }
+
+            #js {
+                position: absolute;
+                left: 15%;
+                top: 45%;
+            }
+
+            /* #js::before {
+                content: '';
+                position: absolute;
+                width: 350px;
+                height: 3px;
+                background-color: #000;
+                transform: rotate(-35deg);
+                left: 260px;
+                top: 200px;
+            } */
+
+            #jq {
+                position: absolute;
+                top: 65%;
+                left: 30%;
+            }
+
+            #jq::before {
+                content: '';
+                position: absolute;
+                width: 200px;
+                height: 3px;
+                background-color: #000;
+                transform: rotate(-35deg);
+                left: 100px;
+                top: -35px;
+            }
+
+            #bs {
+                position: absolute;
+                left: 70%;
+                top: 5%;
+            }
+
+            #bs::before {
+                content: '';
+                position: absolute;
+                width: 370px;
+                height: 3px;
+                background-color: #000;
+                transform: rotate(-35deg);
+                left: -300px;
+                top: 220px;
+            }
+
+            #sass {
+                position: absolute;
+                left: 85%;
+                top: 35%;
+            }
+
+            #sass::before {
+                content: '';
+                position: absolute;
+                width: 550px;
+                height: 3px;
+                background-color: #000;
+                transform: rotate(-5deg);
+                left: -550px;
+                top: 120px;
+            }
+
+            #vue {
+                position: absolute;
+                top: 65%;
+                left: 75%;
+            }
+
+            #vue::before {
+                content: '';
+                position: absolute;
+                width: 400px;
+                height: 3px;
+                background-color: #000;
+                transform: rotate(25deg);
+                left: -400px;
+                top: 0px;
+
+            }
+
+            p {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div id="wda" class="col" style="text-align: center;">
+            <img src="./wda.png" alt="">
+            <h1>泰山職訓局</h1>
+            <h2>從零開始的網頁設計課程</h2>
+            <p style="display: block;">政府自辦訓練課程　待業民眾完全免費<br>
+                轉職網頁開發人員　掌握就業必備職能<br>
+                由淺入深學習技術　強化職場的競爭力</p>
+        </div>
+
+        <div id="html" class="col">
+            <img src="./html.png" alt="">
+            <h1>HTML</h1>
+            <p>超文本標記語言（英語：HyperText Markup Language，簡稱：HTML）是一種用於建立網頁的標準標記語言。<br>
+                HTML 是一種基礎技術，常與 CSS、JavaScript 一起被眾多網站用於設計賞心悅目的網頁、網頁應用程式以及行<br>
+                動應用程式的使用者介面。網頁瀏覽器可以讀取 HTML 檔案，並將其彩現成視覺化網頁。HTML 描述了一個網站<br>
+                的結構語意隨著線索的呈現，使之成為一種標記語言而非程式語言。</p>
+        </div>
+
+        <div id="css" class="col">
+            <img src="./css.png" alt="">
+            <h1>CSS3</h1>
+            <p>層疊樣式表（英語：Cascading Style Sheets，簡寫CSS），又稱串樣式列表、級聯樣式表、串接樣式表、階層式樣<br>
+                式表，一種用來為結構化文件（如 HTML 文件或 XML 應用）添加樣式（字型、間距和顏色等）的電腦語言，由<br>
+                W3C 定義和維護。目前最新版本是 CSS2.1，為 W3C 的推薦標準。CSS3 現在已被大部分現代瀏覽器支援，而下<br>
+                一版的 CSS4 仍在開發中。</p>
+        </div>
+
+        <div id="js" class="col">
+            <img src="./js.png" alt="">
+            <h1>JavaScript</h1>
+            <p>層疊樣式表（英語：Cascading Style Sheets，簡寫CSS），又稱串樣式列表、級聯樣式表、串接樣式表、階層式樣<br>
+                式表，一種用來為結構化文件（如 HTML 文件或 XML 應用）添加樣式（字型、間距和顏色等）的電腦語言，由<br>
+                W3C 定義和維護。目前最新版本是 CSS2.1，為 W3C 的推薦標準。CSS3 現在已被大部分現代瀏覽器支援，而下<br>
+                一版的 CSS4 仍在開發中。</p>
+        </div>
+
+        <div id="jq" class="col">
+            <img src="./jq.jpg" alt="">
+            <h1>jQuery</h1>
+            <p>層疊樣式表（英語：Cascading Style Sheets，簡寫CSS），又稱串樣式列表、級聯樣式表、串接樣式表、階層式樣<br>
+                式表，一種用來為結構化文件（如 HTML 文件或 XML 應用）添加樣式（字型、間距和顏色等）的電腦語言，由<br>
+                W3C 定義和維護。目前最新版本是 CSS2.1，為 W3C 的推薦標準。CSS3 現在已被大部分現代瀏覽器支援，而下<br>
+                一版的 CSS4 仍在開發中。</p>
+        </div>
+
+        <div id="bs" class="col">
+            <img src="./bs.png" alt="">
+            <h1>BootStrap</h1>
+            <p>層疊樣式表（英語：Cascading Style Sheets，簡寫CSS），又稱串樣式列表、級聯樣式表、串接樣式表、階層式樣<br>
+                式表，一種用來為結構化文件（如 HTML 文件或 XML 應用）添加樣式（字型、間距和顏色等）的電腦語言，由<br>
+                W3C 定義和維護。目前最新版本是 CSS2.1，為 W3C 的推薦標準。CSS3 現在已被大部分現代瀏覽器支援，而下<br>
+                一版的 CSS4 仍在開發中。</p>
+        </div>
+
+        <div id="sass" class="col">
+            <img src="./sass.png" alt="">
+            <h1>Sass</h1>
+            <p>層疊樣式表（英語：Cascading Style Sheets，簡寫CSS），又稱串樣式列表、級聯樣式表、串接樣式表、階層式樣<br>
+                式表，一種用來為結構化文件（如 HTML 文件或 XML 應用）添加樣式（字型、間距和顏色等）的電腦語言，由<br>
+                W3C 定義和維護。目前最新版本是 CSS2.1，為 W3C 的推薦標準。CSS3 現在已被大部分現代瀏覽器支援，而下<br>
+                一版的 CSS4 仍在開發中。</p>
+        </div>
+
+        <div id="vue" class="col">
+            <img src="./vue.png" alt="">
+            <h1>Vue.js</h1>
+            <p>層疊樣式表（英語：Cascading Style Sheets，簡寫CSS），又稱串樣式列表、級聯樣式表、串接樣式表、階層式樣<br>
+                式表，一種用來為結構化文件（如 HTML 文件或 XML 應用）添加樣式（字型、間距和顏色等）的電腦語言，由<br>
+                W3C 定義和維護。目前最新版本是 CSS2.1，為 W3C 的推薦標準。CSS3 現在已被大部分現代瀏覽器支援，而下<br>
+                一版的 CSS4 仍在開發中。</p>
+        </div>
+    </div>
+</body>
+
+</html>
